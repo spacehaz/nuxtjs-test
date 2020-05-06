@@ -1,0 +1,17 @@
+{
+  "name": "nuxtjs-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/spacehaz/nuxtjs-test.git",
+  "author": "spacehaz <spacehaz@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt build"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.10.2",
+    "nuxt": "^2.12.2"
+  }
+}
