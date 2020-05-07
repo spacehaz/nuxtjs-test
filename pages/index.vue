@@ -8,6 +8,7 @@
   export default {
     components: {
       ProgressBar
-    }
+    },
+    layout: 'index'
   }
 </script>
