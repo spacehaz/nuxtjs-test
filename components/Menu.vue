@@ -49,6 +49,10 @@ export default {
     text-decoration: none;
   }
 
+  .menu__list-item:last-child {
+    margin-right: 0px;
+  }
+
   .menu__list-link_active {
     text-decoration: underline;
   }

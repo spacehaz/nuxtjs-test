@@ -1,29 +1,34 @@
 <template>
   <footer class="footer">
-    <div class='footer__top'>
-      <div class='footer__message'>
-        Спасибо всем, кто помог состояться этому проекту
+    <Container className='footer__content'>
+      <div class='footer__top'>
+        <div class='footer__message'>
+          Спасибо всем, кто помог состояться этому проекту
+        </div>
+        <div class='footer__menu'>
+          <Menu v-bind:menu='menu' />
+        </div>
+        <div class='footer__social-networks'>
+          Мы в Фейсбуке, Инстаграме и Youtube
+          <p class='footer__share'/>Поделитесь ↗</p>
+        </div>
       </div>
-      <div class='footer__menu'>
-        <Menu v-bind:menu='menu' />
+      <div class='footer__bottom'>
+        <p class='footer__copyright'>Рак Лечится {{(new Date).getFullYear()}}</p >
+        <p class='footer__made-by'>Сделано студентами Яндекс Практикум</p >
       </div>
-      <div class='footer__social-networks'>
-        Мы в Фейсбуке, Инстаграме и Youtube
-        <p class='footer__share'/>Поделитесь ↗</p>
-      </div>
-    </div>
-    <div class='footer__bottom'>
-      <p class='footer__copyright'>Рак Лечится {{(new Date).getFullYear()}}</p >
-      <p class='footer__made-by'>Сделано студентами Яндекс Практикум</p >
-    </div>
+    </Container>
   </footer>
 </template>
 
 <script>
   import Menu from '~/components/Menu.vue'
+  import Container from '~/components/Container.vue'
+
   export default {
     components: {
-      Menu
+      Menu,
+      Container
     },
     data () {
       return {
@@ -51,6 +56,10 @@
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     background: #FBFBFB;
     font-size: 18px;
+  }
+
+  .footer__content {
+
   }
 
   .footer__social-networks {

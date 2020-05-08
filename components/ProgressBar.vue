@@ -23,6 +23,7 @@ export default {
 .progress-bar {
   max-width: 260px;
   height: 40px;
+  background: #F4F4F4;
   position: relative;
 }
 

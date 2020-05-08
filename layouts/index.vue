@@ -2,7 +2,7 @@
   <div>
     <Header />
     <main class='content'>
-      <nuxt/>
+      <nuxt />
     </main>
     <Footer />
   </div>
@@ -22,6 +22,5 @@
 
 <style scoped>
   .content {
-    padding: 100px 60px;
   }
 </style>

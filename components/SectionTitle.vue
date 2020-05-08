@@ -1,18 +1,11 @@
 <template>
   <h1 class='section-title'>
-    {{title}}
+    <slot></slot>
   </h1>
 </template>
 
 <script>
-export default {
-  props: {
-    title: {
-      type: String,
-      required: true
-    }
-  }
-}
+export default {}
 </script>
 
 <style scoped>

@@ -12,7 +12,6 @@ export const mutations = {
     })
   },
   addList (state, stories) {
-    console.log('here')
     state.stories = stories
   },
   remove (state, { todo }) {
@@ -24,12 +23,14 @@ export const mutations = {
 }
 
 export const actions = {
-  GET_LIST ({ commit }) {
+  async GET_LIST ({ commit }) {
     // const ip = await this.$axios.$get('http://icanhazip.com')
     // console.log({ ip })
     commit('addList', DATA)
   }
 }
+
+const timeout = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 
 const DATA = [{

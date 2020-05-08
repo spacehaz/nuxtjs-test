@@ -1,17 +1,22 @@
 <template>
   <header class="header">
-    <Logo />
-    <Menu v-bind:menu='menu' />
+    <Container className='header__content'>
+      <Logo />
+      <Menu v-bind:menu='menu' />
+    </Container>
   </header>
 </template>
 
 <script>
   import Logo from '~/components/Logo.vue'
   import Menu from '~/components/Menu.vue'
+  import Container from '~/components/Container.vue'
+
   export default {
     components: {
       Logo,
-      Menu
+      Menu,
+      Container
     },
     methods: {
       openModal: _ => console.log('open modal')
@@ -42,12 +47,16 @@
 
 <style scoped>
   .header {
-    height: 76px;
-    position: relative;
     padding: 0px 60px;
+    border-bottom: 1px solid #E8E8E8;
+  }
+
+  .header__content {
     display: flex;
+    height: 76px;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #E8E8E8;
+    position: relative;
+    
   }
 </style>
